@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Posts from './components/Posts';
 import NoPage from './components/NoPage';
 import NavBar from './components/NavBar';
+import PostList from './components/PostList';
 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="about" element={<About/>}/>
           <Route path="posts" element={<Posts/>}>
             <Route path="addpost" element={<AddPost/>}/>
+            <Route path="post-list" element={<PostList/>}/>
           </Route>
           <Route path="*" element={<NoPage/>}/>
         </Route>
