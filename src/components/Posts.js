@@ -4,7 +4,7 @@ export default function Posts() {
   return (
     <div>
         <div className='sub-nav'>
-            <Link to ="post-list">Posts</Link>
+            <Link to ="list">Posts</Link>
             <Link to = "addpost">Add Post</Link>
         </div>
         <Outlet/>
