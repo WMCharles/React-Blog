@@ -9,6 +9,7 @@ import NavBar from './components/NavBar';
 import PostList from './components/PostList';
 
 import './App.css';
+import PostItem from './components/PostItem';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route path="about" element={<About/>}/>
           <Route path="posts" element={<Posts/>}>
             <Route path="addpost" element={<AddPost/>}/>
-            <Route path="post-list" element={<PostList/>}/>
+            <Route path="list" element={<PostList/>}/>
+            <Route path=":title" element={<PostItem/>}/>
           </Route>
           <Route path="*" element={<NoPage/>}/>
         </Route>
