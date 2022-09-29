@@ -7,6 +7,12 @@ export default function PostList() {
         <div className='title'>
           <h2>Available Posts</h2>
         </div>
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="What post are you looking for?"/>
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+           </button>
+        </div>
         <div class="post">
             <div class="post-item">
                 <div class="desc">
