@@ -49,6 +49,9 @@ Install dependencies
 ```
 npm install
 ```
+```
+npm i react-router-dom
+````
 Run server
 ```
 npm run server
