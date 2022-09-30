@@ -33,10 +33,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<NavBar/>}>
-          <Route index element={<Home/>}/>
+          <Route index element={<Home PostsData={post}/>}/>
           <Route path="about" element={<About/>}/>
           <Route path="posts" element={<Posts/>}>
-            <Route path="addpost" element={<AddPost/>}/>
+            <Route path="addpost" element={<AddPost addPostItem={addPostItem}/>}/>
           </Route>
           <Route path="posts/:title" element={<PostItem/>}/>
           <Route path="*" element={<NoPage/>}/>
