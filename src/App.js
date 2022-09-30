@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import About from './components/About/About';
 import AddPost from './components/posts/AddPost';
 import Home from './components/Home/Home';
@@ -11,6 +11,8 @@ import './App.css';
 import PostItem from './components/posts/PostItem';
 
 function App() {
+  // Post state
+  const [post, setPost] = useState([])
   return (
     <Router>
       <Routes>
