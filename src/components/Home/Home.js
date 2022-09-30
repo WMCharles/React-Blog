@@ -13,10 +13,10 @@ export default function Home({PostsData, input}) {
             </button>
             </div>
             {PostsData.map((post) => 
-                <div className="post" key={post.id}>
+                <div className="post" key={post.id} onClick={() => {navigate(`/posts/${post.title}`);}}>
                     <div className="post-item">
                         <div className="desc"> 
-                            <h4 onClick={() => {navigate(`/posts/${post.title}`);}}>{post.title}</h4>
+                            <h4>{post.title}</h4>
                         </div>
                         <img src={post.image} alt="post"/>
                     </div>
