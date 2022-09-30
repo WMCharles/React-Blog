@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
-import About from './components/About';
-import AddPost from './components/AddPost';
-import Home from './components/Home';
-import Posts from './components/Posts';
-import NoPage from './components/NoPage';
-import NavBar from './components/NavBar';
+import About from './components/About/About';
+import AddPost from './components/posts/AddPost';
+import Home from './components/Home/Home';
+import Posts from './components/posts/Posts';
+import NoPage from './components/ErrorPage/NoPage';
+import NavBar from './components/NavBar/NavBar';
 
 import './App.css';
-import PostItem from './components/PostItem';
+import PostItem from './components/posts/PostItem';
 
 function App() {
   return (
