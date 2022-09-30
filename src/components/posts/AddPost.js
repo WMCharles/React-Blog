@@ -32,19 +32,19 @@ export default function AddPost({addPostItem}) {
   return (
     <div>
       <div className='posts addpost'>
-          <form>
+          <form onSubmit={handleInputSubmit}>
             <h2>Create Post</h2>
             <div className='input-control'>
               <label htmlFor='title'>Title</label>
-              <input type="text" placeholder="add title"/>
+              <input type="text" name="title" placeholder="add title" onChange={handleInputChange}/>
             </div>
             <div className='input-control'> 
               <label htmlFor='description'>Description</label>
-              <textarea rows="5" name="description" placeholder="add description" />
+              <textarea rows="5" name="description" placeholder="add description" onChange={handleInputChange}/>
             </div>
             <div className='input-control'>
               <label htmlFor='description'>Image</label>
-              <input type="text" placeholder='add image url'/>
+              <input type="text" name='image' placeholder='add image url' onChange={handleInputChange}/>
             </div>
             <div className='input-control'>
               <button type='submit'>Add Post</button>
