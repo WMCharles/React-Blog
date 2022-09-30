@@ -24,6 +24,11 @@ function App() {
     []
   )
   
+  //Update post state as data is added to server
+  function addPostItem(item){
+    const newPost = [...post, item]
+    setPost(newPost)
+  }
   return (
     <Router>
       <Routes>
