@@ -17,7 +17,7 @@ function App() {
   // Fetch data
   useEffect(
     () => {
-      fetch("https://blowg.herokuapp.com/posts")
+      fetch("http://localhost:8001/posts")
       .then((res) => (res.json()))
       .then((data) => setPost(data))
     },
