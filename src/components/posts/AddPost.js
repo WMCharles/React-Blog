@@ -27,7 +27,7 @@ export default function AddPost({addPostItem}) {
 
   useEffect(()=>{
     if(id){
-        fetch(`http://localhost:3000/posts/${id}`).then(resp=>resp.json()).then(post=>{
+        fetch(`http://localhost:8001/posts/${id}`).then(resp=>resp.json()).then(post=>{
             setFormData(post);
         })
     }
