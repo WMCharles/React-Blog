@@ -7,7 +7,7 @@ export default function PostItem({PostsData}) {
     return (
         <div>
             {PostsData.filter((post) => post.title === title).map((card) => 
-                <div className='postitem'>
+                <div className='postitem' key={card.id}>
                     <h1>{card.title}</h1>
                     <a href={`edit/${card.id}`}>Edit</a>
                     <div className='shinobi'>
