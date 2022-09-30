@@ -8,7 +8,13 @@ export default function AddPost({addPostItem}) {
     image:""
   })
 
-export default function AddPost() {
+  //handleChange function
+  function handleInputChange (event){
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+  });
+  }
   return (
     <div>
       <div className='posts addpost'>
