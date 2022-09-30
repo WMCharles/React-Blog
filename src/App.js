@@ -37,6 +37,7 @@ function App() {
           <Route path="about" element={<About/>}/>
           <Route path="posts" element={<Posts/>}>
             <Route path="addpost" element={<AddPost addPostItem={addPostItem}/>}/>
+            <Route path="edit/:id" element={<AddPost addPostItem={addPostItem}/>}/>
           </Route>
           <Route path="posts/:title" element={<PostItem PostsData={post}/>}/>
           <Route path="*" element={<NoPage/>}/>
