@@ -1,8 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { PostsData } from '../../data/PostsData'
 
-export default function PostItem() {
+export default function PostItem({PostsData}) {
     const {title} = useParams()
 
     return (

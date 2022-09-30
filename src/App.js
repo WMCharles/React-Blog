@@ -38,7 +38,7 @@ function App() {
           <Route path="posts" element={<Posts/>}>
             <Route path="addpost" element={<AddPost addPostItem={addPostItem}/>}/>
           </Route>
-          <Route path="posts/:title" element={<PostItem/>}/>
+          <Route path="posts/:title" element={<PostItem PostsData={post}/>}/>
           <Route path="*" element={<NoPage/>}/>
         </Route>
       </Routes>
