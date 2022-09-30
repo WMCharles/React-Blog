@@ -53,15 +53,15 @@ export default function AddPost({addPostItem}) {
             <h2>Create Post</h2>
             <div className='input-control'>
               <label htmlFor='title'>Title</label>
-              <input type="text" name="title" placeholder="add title" onChange={handleInputChange}/>
+              <input type="text" name="title" placeholder="add title" onChange={handleInputChange} value={formData.title}/>
             </div>
             <div className='input-control'> 
               <label htmlFor='description'>Description</label>
-              <textarea rows="5" name="description" placeholder="add description" onChange={handleInputChange}/>
+              <textarea rows="5" name="description" placeholder="add description" onChange={handleInputChange}  value={formData.description}/>
             </div>
             <div className='input-control'>
               <label htmlFor='description'>Image</label>
-              <input type="text" name='image' placeholder='add image url' onChange={handleInputChange}/>
+              <input type="text" name='image' placeholder='add image url' onChange={handleInputChange} value={formData.image}/>
             </div>
             <div className='input-control'>
               <button type='submit'>Add Post</button>
