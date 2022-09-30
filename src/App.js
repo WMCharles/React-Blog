@@ -13,6 +13,17 @@ import PostItem from './components/posts/PostItem';
 function App() {
   // Post state
   const [post, setPost] = useState([])
+
+  // Fetch data
+  useEffect(
+    () => {
+      fetch("http://localhost:8001/posts")
+      .then((res) => (res.json()))
+      .then((data) => setPost(data))
+    },
+    []
+  )
+  
   return (
     <Router>
       <Routes>
