@@ -1,4 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+export default function AddPost({addPostItem}) {
+  // Input State
+  const [formData, setFormData] = useState({
+    title:"",
+    description:"",
+    image:""
+  })
 
 export default function AddPost() {
   return (
