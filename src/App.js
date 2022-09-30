@@ -29,11 +29,27 @@ function App() {
     const newPost = [...post, item]
     setPost(newPost)
   }
+
+  // Implementing search functionality
+  const [query, setQuery] = useState("")
+
+  const keys = ["description", "title"]
+  const search = (data) => {
+    return data.filter((item) => 
+            keys.some((key) => 
+                item[key].toUpperCase().includes(query)
+            )
+    )
+}
+
+
+
+  // console.log(post.filter((item) => item.title.toLowerCase().includes("sakumo")))
   return (
     <Router>
       <Routes>
         <Route path="/" element={<NavBar/>}>
-          <Route index element={<Home PostsData={post}/>}/>
+          <Route index element={<Home PostsData={search(post)} input={setQuery}/>}/>
           <Route path="about" element={<About/>}/>
           <Route path="posts" element={<Posts/>}>
             <Route path="addpost" element={<AddPost addPostItem={addPostItem}/>}/>
