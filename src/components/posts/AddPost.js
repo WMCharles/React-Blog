@@ -15,6 +15,20 @@ export default function AddPost({addPostItem}) {
       [event.target.name]: event.target.value
   });
   }
+
+  //handleSubmit function - submits data to server
+  function handleInputSubmit(){
+    fetch("http://localhost:8001/posts", {
+      method: "POST",
+      headers: {
+        "content-type":"application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    .then((res) => res.json())
+    .then((dataInput) => addPostItem(dataInput))
+  }
+
   return (
     <div>
       <div className='posts addpost'>
