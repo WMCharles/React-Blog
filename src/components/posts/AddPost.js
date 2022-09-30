@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import {useParams} from "react-router-dom"
 
 export default function AddPost({addPostItem}) {
   // Input State
@@ -16,10 +17,26 @@ export default function AddPost({addPostItem}) {
   });
   }
 
+  // Edit Post 
+  // 1. Define constant use for editing
+  // NB: the const needs to be the same as the one defined in Routes
+  // 2. useEffect - for editing 
+  // 3. Update handleInputSubmit function  
+  const params = useParams()
+  const [id, setId] = useState(params.id)
+
+  useEffect(()=>{
+    if(id){
+        fetch(`http://localhost:3000/posts/${id}`).then(resp=>resp.json()).then(post=>{
+            setFormData(post);
+        })
+    }
+  }, [id]); 
+
   //handleSubmit function - submits data to server
   function handleInputSubmit(){
-    fetch("http://localhost:8001/posts", {
-      method: "POST",
+    fetch(`http://localhost:8001/posts/${id ? '/'+id : ''}`, {
+      method: id ? "PATCH" : "POST",
       headers: {
         "content-type":"application/json"
       },
