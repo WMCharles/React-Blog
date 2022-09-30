@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# React Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of content
 
-## Available Scripts
++[Introduction](#introduction)
++[Project Features](#project-features)
++[Home Page](#home-page)
++[Post Page](#post-page)
++[Technologies Used](#technologies-used)
++[Contributions](#contributions)
++[Author](#author)
++[Bugs & Feature Request](#bugs--fixes--feature-request)
+## Introduction
 
-In the project directory, you can run:
+This is a blog on different Naruto characters. I made it just for fun but also intended to use it explore different fundamental concepts in React Js. The need to put i use what I have learnt in React & my love for Naruto inspired this mini project. It uses different concepts in react. These include React Router Dom, Controlled Componenents, React Forms, Lists and Keys, React Filtering, and Hooks. useState, useEffect, useNavigate, and useParams are some of the Hooks used in these project. The project also uses React Fetch API to fetch data from json-server.
 
-### `npm start`
+## Project Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Navigation Bar - navigating through different pages(components)
+* Home Page - Displays all the posts
+* Post Page - Displays contents of a single post
+* Form - adding & editing blog posts
+* Search bar - searching blog posts based on title & description
+* Edit button - takes u to editing page
+### Home Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://github.com/WMCharles/React-Blog/blob/main/hoome.png)
 
-### `npm test`
+### Post Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/WMCharles/React-Blog/blob/main/single-post.png)
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React - it was used to design, structure and add content to the web pages
+* CSS - it was used to styling our the pages 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project_name>/<location>`
+5. Create the pull request.
 
-### `npm run eject`
+Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Bugs & Fixes / Feature request
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In case you find a bug, kindly open an issue [here](https://https://github.com/WMCharles/Auction-Site/issues/new). Include your query and your expected results.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
++ [Charles Wafula](https://github.com/WMCharles)
