@@ -27,7 +27,7 @@ export default function AddPost({addPostItem}) {
 
   useEffect(()=>{
     if(id){
-        fetch(`http://localhost:8001/posts/${id}`).then(resp=>resp.json()).then(post=>{
+        fetch(`https://blowg.herokuapp.com/posts/${id}`).then(resp=>resp.json()).then(post=>{
             setFormData(post);
         })
     }
@@ -35,7 +35,7 @@ export default function AddPost({addPostItem}) {
 
   //handleSubmit function - submits data to server
   function handleInputSubmit(){
-    fetch(`http://localhost:8001/posts/${id ? '/'+id : ''}`, {
+    fetch(`https://blowg.herokuapp.com/posts/${id ? '/'+id : ''}`, {
       method: id ? "PATCH" : "POST",
       headers: {
         "content-type":"application/json"
