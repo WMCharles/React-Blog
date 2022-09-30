@@ -8,14 +8,15 @@ export default function AddPost() {
             <h2>Create Post</h2>
             <div className='input-control'>
               <label htmlFor='title'>Title</label>
-              <input type="text" placeholder="title"/>
+              <input type="text" placeholder="add title"/>
             </div>
             <div className='input-control'> 
               <label htmlFor='description'>Description</label>
-              <input type="textarea" placeholder='add description' />
+              <textarea rows="5" name="description" placeholder="add description" />
             </div>
             <div className='input-control'>
-              <input type="file"/>
+              <label htmlFor='description'>Image</label>
+              <input type="text" placeholder='add image url'/>
             </div>
             <div className='input-control'>
               <button type='submit'>Add Post</button>
