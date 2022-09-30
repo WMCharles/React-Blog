@@ -45,10 +45,12 @@ Clone the repository
 git clone git@github.com:WMCharles/React-Blog.git
 ```
 
-Install dependencies
+Install dependecies
+
 ```
 npm install
 ```
+Install react-router-dom
 ```
 npm i react-router-dom
 ````
