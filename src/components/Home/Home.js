@@ -1,13 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-export default function Home({PostsData}) {
+export default function Home({PostsData, input}) {
   const navigate = useNavigate()
   return (
     <div>
         <div className="posts">
             <div className="search">
-                <input type="text" className="searchTerm" placeholder="What post are you looking for?"/>
+                <input type="text" className="searchTerm" placeholder="What naruto charactor are you looking for?" onChange={(e) => input(e.target.value.toLocaleUpperCase())}/>
                 <button type="submit" className="searchButton">
                 <i className="fa fa-search"></i>
             </button>
