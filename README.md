@@ -13,7 +13,7 @@
 
 ## Introduction
 
-This is a blog on different Naruto characters. I made it just for fun but also intended to use it explore different fundamental concepts in React Js. The need to put i use what I have learnt in React & my love for Naruto inspired this mini project. It uses different concepts in react. These include React Router Dom, Controlled Componenents, React Forms, Lists and Keys, React Filtering, and Hooks. useState, useEffect, useNavigate, and useParams are some of the Hooks used in these project. The project also uses React Fetch API to fetch data from json-server.
+This is a blog on different Naruto characters. It is made for fun but mainly intended to explore different fundamental concepts in React Js. The project implements different concepts in react. These include React Router Dom, Controlled Componenents, React Forms, Lists and Keys, React Filtering, and Hooks. useState, useEffect, useNavigate, and useParams are some of the Hooks used in these project. The project also uses React Fetch API to fetch data from json-server.
 
 ## Project Features
 
@@ -23,6 +23,7 @@ This is a blog on different Naruto characters. I made it just for fun but also i
 * Form - adding & editing blog posts
 * Search bar - searching blog posts based on title & description
 * Edit button - takes u to editing page
+
 ### Home Page
 
 ![image](https://github.com/WMCharles/React-Blog/blob/main/hoome.png)
