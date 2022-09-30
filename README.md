@@ -7,6 +7,7 @@
 + [Home Page](#home-page)
 + [Post Page](#post-page)
 + [Technologies Used](#technologies-used)
++ [Installation](#installation--set-up)
 + [Contributions](#contributions)
 + [Author](#author)
 + [Bugs & Feature Request](#bugs--fixes--feature-request)
