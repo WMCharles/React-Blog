@@ -9,6 +9,7 @@ export default function PostItem({PostsData}) {
             {PostsData.filter((post) => post.title === title).map((card) => 
                 <div className='postitem'>
                     <h1>{card.title}</h1>
+                    <a href={`edit/${card.id}`}>Edit</a>
                     <div className='shinobi'>
                         <img src={card.image} alt="postimage"/>
                     </div>
