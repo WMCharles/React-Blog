@@ -37,6 +37,25 @@ This is a blog on different Naruto characters. It is made for fun but mainly int
 * React - it was used to design, structure and add content to the web pages
 * CSS - it was used to styling our the pages 
 
+## Installation & Set up
+
+Clone the repository
+```
+git clone git@github.com:WMCharles/React-Blog.git
+```
+
+Install dependencies
+```
+npm install
+```
+Run server
+```
+npm run server
+```
+Start project
+```
+npm start
+```
 ## Contributions
 
 1. Fork this repository.
