@@ -23,6 +23,7 @@ export default function AddPost({addPostItem}) {
   // 2. useEffect - for editing 
   // 3. Update handleInputSubmit function  
   const params = useParams()
+  // eslint-disable-next-line no-unused-vars
   const [id, setId] = useState(params.id)
 
   useEffect(()=>{
