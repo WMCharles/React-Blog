@@ -78,7 +78,6 @@ nav {
 
 .desc {
     padding: 15px;
-    /* text-align: center; */
 }
 
 /* PostItem */
@@ -99,11 +98,7 @@ nav {
 .shinobi img {
     width: 100%;
 }
-/* .postitem img {
-    width: 80%;
-    margin: 0 auto;
-    height: 400px;
-} */
+
 
 /* Search Bar */
 .search {
@@ -171,7 +166,6 @@ nav {
     padding: 12px 0;
     border: none;
     border-bottom: 1px solid black;
-    /* border-radius: 5px ; */
 }
 
 .input-control input:focus {
@@ -182,7 +176,6 @@ nav {
     padding: 12px 0;
     border: none;
     border-bottom: 1px solid black;
-    /* border-radius: 5px ; */
 }
 
 .input-control textarea:focus {
