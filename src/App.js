@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import About from './components/About/About';
 import AddPost from './components/posts/AddPost';
 import Home from './components/Home/Home';
-import Posts from './components/posts/Posts';
+import Contact from './components/Contact/Contact';
 import NoPage from './components/ErrorPage/NoPage';
 import NavBar from './components/NavBar/NavBar';
 
@@ -43,19 +43,16 @@ function App() {
 }
 
 
-
-  // console.log(post.filter((item) => item.title.toLowerCase().includes("sakumo")))
   return (
     <Router>
       <Routes>
         <Route path="/" element={<NavBar/>}>
           <Route index element={<Home PostsData={search(post)} input={setQuery}/>}/>
           <Route path="about" element={<About/>}/>
-          <Route path="posts" element={<Posts/>}>
-            <Route path="addpost" element={<AddPost addPostItem={addPostItem}/>}/>
-            <Route path="edit/:id" element={<AddPost addPostItem={addPostItem}/>}/>
-          </Route>
-          <Route path="posts/:title" element={<PostItem PostsData={post}/>}/>
+          <Route path="contact" element={<Contact/>}/>
+          <Route path="addpost" element={<AddPost addPostItem={addPostItem}/>}/>
+          <Route path="post/edit/:id" element={<AddPost addPostItem={addPostItem}/>}/>
+          <Route path="post/:title" element={<PostItem PostsData={post}/>}/>
           <Route path="*" element={<NoPage/>}/>
         </Route>
       </Routes>
