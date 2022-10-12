@@ -1,5 +1,4 @@
 {
-  "homepage": "https://WMCharles.github.io/React-Blog",
   "name": "posts",
   "version": "0.1.0",
   "private": true,
@@ -14,13 +13,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=8000 react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "start": "PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server --watch db.json -p 8001"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

@@ -17,7 +17,7 @@ function App() {
   // Fetch data
   useEffect(
     () => {
-      fetch("http://localhost:8001/posts")
+      fetch("http://localhost:8000/posts")
       .then((res) => (res.json()))
       .then((data) => setPost(data))
     },
