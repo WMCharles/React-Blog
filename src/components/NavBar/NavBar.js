@@ -9,8 +9,8 @@ export default function NavBar() {
             <div><Link to="/" className="logo">NARUTO</Link></div>
             <div className='menu'>
               <Link to="/">Home</Link>
-              <Link to="/posts">Post</Link>
               <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
         </nav>
