@@ -13,7 +13,7 @@ export default function Home({PostsData, input}) {
             </button>
             </div>
             {PostsData.map((post) => 
-                <div className="post" key={post.id} onClick={() => {navigate(`/posts/${post.title}`);}}>
+                <div className="post" key={post.id} onClick={() => {navigate(`/post/${post.title}`);}}>
                     <div className="post-item">
                         <div className="desc"> 
                             <h4>{post.title}</h4>
