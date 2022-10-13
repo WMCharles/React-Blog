@@ -15,7 +15,10 @@ export default function Form() {
                 </div>
                 <div className='input-group'>
                   <label>Type your message...</label>
-                  <textarea rows="5"></textarea>
+                  <textarea rows="3"></textarea>
+                </div>
+                <div className='input-group'>
+                    <button>Send</button>
                 </div>
               </form>
         </div>
