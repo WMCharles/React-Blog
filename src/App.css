@@ -193,3 +193,24 @@ nav {
 .about h2 {
     margin-bottom: 1em;
 }
+
+.contact {
+    display: flex;
+    margin-top: 2em;
+}
+
+.contact > div {
+    width: 50%;
+}
+
+.box, .phone, .envelope {
+    display: flex;
+    align-items: center;
+    padding: 0 1em 0 0;
+    margin-bottom: .6em;
+}
+
+.icon {
+    margin-right: 1em;
+    font-size: 1.2em;
+}
