@@ -214,3 +214,33 @@ nav {
     margin-right: 1em;
     font-size: 1.2em;
 }
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group input, .input-group textarea {
+    display: block;
+    width: 100%;
+}
+
+.input-group button {
+    padding: 10px;
+    margin-top: 10px ;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-group input, .input-group textarea {
+    padding: 12px 0;
+    margin-bottom: .4em;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    outline: 0;
+}
