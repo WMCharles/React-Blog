@@ -18,7 +18,7 @@ export default function Form() {
                   <textarea rows="3"></textarea>
                 </div>
                 <div className='input-group'>
-                    <button>Send</button>
+                    <button className='send-btn'>Send</button>
                 </div>
               </form>
         </div>
